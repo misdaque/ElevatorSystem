@@ -1,0 +1,1 @@
+cmd.exe /X /C "\usr\lib\jvm\java-11-openjdk-amd64\bin\javac @E:/Docoments/Documents/ElevatorSystem/target/org.codehaus.plexus.compiler.javac.JavacCompiler7700986273980296033arguments"
