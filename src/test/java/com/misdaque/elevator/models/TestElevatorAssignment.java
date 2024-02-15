@@ -2,6 +2,7 @@ package com.misdaque.elevator.models;
 
 
 import com.misdaque.elevator.IndividualElevatorAssignmentSystem;
+import com.misdaque.elevator.MultiplePersonAssignmentSystem;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -36,7 +37,7 @@ public class TestElevatorAssignment {
             people--;
         }
 
-        Building building = new Building(floors, new IndividualElevatorAssignmentSystem(elevators));
+        Building building = new Building(floors, new MultiplePersonAssignmentSystem(elevators));
         building.getElevatorSystem().assignElevator(elevatorRequests);
 
     }

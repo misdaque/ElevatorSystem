@@ -1,4 +1,5 @@
 import com.misdaque.elevator.IndividualElevatorAssignmentSystem;
+import com.misdaque.elevator.MultiplePersonAssignmentSystem;
 import com.misdaque.elevator.models.Building;
 import com.misdaque.elevator.models.ElevatorRequest;
 
@@ -36,7 +37,7 @@ public class Main {
             people--;
         }
 
-        Building building = new Building(floors, new IndividualElevatorAssignmentSystem(elevatorNumber));
+        Building building = new Building(floors, new MultiplePersonAssignmentSystem(elevatorNumber));
         building.getElevatorSystem().assignElevator(elevatorRequests);
     }
 }

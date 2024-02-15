@@ -4,8 +4,8 @@ import com.misdaque.elevator.models.Elevator;
 import com.misdaque.elevator.models.ElevatorRequest;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
-
 
 public abstract class ElevatorSystem {
 
@@ -23,6 +23,8 @@ public abstract class ElevatorSystem {
     protected abstract Elevator assignElevator(ElevatorRequest elevatorRequest);
 
     public void assignElevator(List<ElevatorRequest> elevatorRequests){
+
+        elevatorRequests.sort(Comparator.comparingInt(ElevatorRequest::getTimeOfRequest));
 
         for(ElevatorRequest elevatorRequest : elevatorRequests) {
             Elevator elevator = assignElevator(elevatorRequest);

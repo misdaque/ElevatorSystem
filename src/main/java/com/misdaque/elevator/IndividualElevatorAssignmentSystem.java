@@ -25,8 +25,8 @@ public class IndividualElevatorAssignmentSystem extends ElevatorSystem {
             }
         }
 
-        selectedElevator.setElevatorRequest(elevatorRequest);
-        selectedElevator.setState(State.RUNNING);
+//        selectedElevator.setElevatorRequest(elevatorRequest);
+//        selectedElevator.setState(State.RUNNING);
 
         return selectedElevator;
     }

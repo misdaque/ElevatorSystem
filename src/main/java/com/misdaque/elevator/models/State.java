@@ -2,7 +2,7 @@ package com.misdaque.elevator.models;
 
 public enum State {
 
-    RUNNING,
+    MOVING,
     IDLE,
     NOT_WORKING;
 }
